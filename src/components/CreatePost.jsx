@@ -11,7 +11,7 @@ const CreatePost = (props) => {
             name: name,
             post: post
         };
-        props.addNewPost(newEntry)
+        props.addNewPostProperty(newEntry)
     }
 
     return (
@@ -19,7 +19,7 @@ const CreatePost = (props) => {
             <label>Name</label>
             <input type='text' value={name} onChange={(event)=>setName(event.target.value)}/>
             <label>Post</label>
-            <input type='text' value={name} onChange={(event)=>setPost(event.target.value)}/>
+            <input type='text' value={post} onChange={(event)=>setPost(event.target.value)}/>
             <button type='submit'>Create</button>
         </form>
     );
