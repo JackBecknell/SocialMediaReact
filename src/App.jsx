@@ -16,15 +16,11 @@ function App() {
 
   return (
     <div className="App">
-      <div className='defaultStyle'>
-        <NavBar/>
-      </div>
-      <div>
-        <CreatePost addNewPostProperty = {addNewPost}/>
-      </div>
+      <NavBar/>
+      <CreatePost addNewPostProperty = {addNewPost}/>
       <DisplayPosts actualPosts = {posts}/>
     </div>
-  );
+  )
 }
 
 export default App;

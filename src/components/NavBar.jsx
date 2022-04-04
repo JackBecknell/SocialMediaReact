@@ -3,7 +3,7 @@ import './styles/default-syle.css'
 
 const NavBar = () => {
     return (
-        <nav>
+        <nav className='defaultStyle'>
             <a href="#"><b>Social</b>Feed</a>
         </nav>
     )
