@@ -1,0 +1,30 @@
+.defaultStyle {
+    background-color: rgb(218, 223, 228);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+}
+button:hover {
+    box-shadow:0 12px 16px 0 rgba(0, 0, 0, 0.086),0 12px 16px 0 rgba(0, 0, 0, 0.081);
+}
+
+.invisible-edge{
+    border: transparent;
+    background-color: transparent;
+}
+
+.unclicked{
+    background-color: rgb(218, 223, 228);
+}
+
+.liked{
+    color: green;
+    border: transparent;
+    background-color: transparent;
+}
+
+.disliked{
+    color: red;
+    border: transparent;
+    background-color: transparent;
+}

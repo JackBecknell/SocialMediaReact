@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './styles/default-syle.css'
+import './styles/styles.css'
 
 const CreatePost = (props) => {
     const [name, setName] = useState('');

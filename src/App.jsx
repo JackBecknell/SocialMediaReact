@@ -2,7 +2,7 @@ import { useState } from "react";
 import NavBar from "./components/NavBar";
 import CreatePost from "./components/CreatePost";
 import DisplayPosts from "./components/DisplayPosts";
-import './components/styles/default-syle.css'
+import './components/styles/styles.css'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
       <CreatePost addNewPostProperty = {addNewPost}/>
       <DisplayPosts actualPosts = {posts}/>
     </div>
-  )
+  );
 }
 
 export default App;
