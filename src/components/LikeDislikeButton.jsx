@@ -27,9 +27,9 @@ const LikeDislikeButton = (props) => {
     }
 
         return (
-            <div>
-                <button className={"invisible-edge"} onClick={() => handleClick('like')}><span className={likeButtonClass} ><i class="fas fa-thumbs-up"></i></span></button>
-                <button className={"invisible-edge"} onClick={() => handleClick('dislike')}><span className={dislikeButtonClass}><i class="fas fa-thumbs-down"></i></span></button>
+            <div className="like-and-dislike">
+                <button className={"invisible-edge"} onClick={() => handleClick('like')}><span className={likeButtonClass} ><i class="fas fa-thumbs-up fa-2xl"></i></span></button>
+                <button className={"invisible-edge"} onClick={() => handleClick('dislike')}><span className={dislikeButtonClass}><i class="fas fa-thumbs-down fa-2xl"></i></span></button>
             </div>
         )
 }

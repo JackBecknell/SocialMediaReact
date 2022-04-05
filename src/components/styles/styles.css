@@ -4,17 +4,179 @@
     border-width: 2px;
     border-color: rgb(0, 0, 0);
 }
+/*V this doesnt work...*/
+.page-background{
+    /*background-color: #000000;*/
+}
+
+/*Used to remove the invisible space created from root*/
+.flatten{
+    margin:0%;
+    padding:0%;
+    border:0%;
+    background-color: #d3ebfd;
+}
+/*Start navbar*/
+.nav-bar{
+    background-color: #00d9ff;
+    background: linear-gradient(to right bottom,#92c8f5, #013c69);
+    padding: 1%;
+    max-width: 100%;
+}
+
+.company-name{
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+/*End navBar*/
+
+
+/*Start create post*/
+
+.feed-box{
+    width: 50%;
+    margin: 1.5rem auto;
+    padding: 10px;
+    border-style: solid;
+    border-color:#c5c5c5;
+    border-width: 2px;
+    border-radius: .75rem;
+    box-shadow: .5rem .5rem 1rem .1rem rgba(0, 0, 0, 0.086);
+    background-color: rgb(255, 255, 255);
+}
+
+label {
+    font-size: 18px;
+}
+
+.create-post{
+    display: grid;
+}
+.creat-post-name-post{
+    display:grid;
+}
+.create-post-row{
+    display:flex;
+    background-color: transparent;
+    justify-content: space-between;
+    margin: .5rem 0 .5rem 0;
+}
+
+.close-together{
+    display: flex;
+    justify-content: center;
+}
+
+.post-input-date{
+    border-radius: .50rem;
+    margin-left: 10%;
+    height: 2rem;
+    width: 8rem;
+}
+
+.create-post-date-create{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: transparent;
+    justify-content: space-between;
+    margin: .5rem 0 .5rem 0;
+}
+.post-input{
+    width: 90%;
+    border-radius: .5rem;
+}
+
+.big-input{
+    height: 5rem;
+}
+
+.create-post-row-item{
+    justify-self: start;
+    margin: 5px 20px 5px 5px;
+
+}
+
+.create-button{
+    border-radius: 9rem;
+    background-color: #136eb3;
+    width: 8rem;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+/*End Create post*/
+
+/*Start Display post*/
+.feed{
+    width: 50%;
+    margin: 1.5rem auto;
+    padding: 10px;
+    border-style: solid;
+    border-color:#c5c5c5;
+    border-width: 2px;
+    border-radius: .75rem;
+    box-shadow: .5rem .5rem 1rem .1rem rgba(0, 0, 0, 0.086)
+}
+
+.displayed-post{
+    padding: .2rem 3rem .5rem 3rem;
+    background-color: #ffffff;
+    border-radius: .75rem;
+}
+
+.post-text{
+    font-size: 17px;
+}
+
+.grey-text{
+    color: rgb(108, 108, 108);
+    font-size: 14px;
+}
+
+.post-divider{
+    max-width: 500%;
+    padding:0%;
+    margin: -.1px 0 -.1px 0;
+    border-style: solid;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-color: #c5c5c5;
+    border-width: 2px;
+    background-color: #ffffff;
+
+}
+
+.no-padding-w-adjusted-width{
+    padding: 0%;
+    width: 51.4%;
+}
+
+.like-and-dislike{
+    align-self: center;
+    size-adjust: 239px;
+}
+
+.date-and-button{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*End Display Posts*/
+
+
+/*Start like/dislike Button styles*/
 button:hover {
     box-shadow:0 12px 16px 0 rgba(0, 0, 0, 0.086),0 12px 16px 0 rgba(0, 0, 0, 0.081);
 }
 
 .invisible-edge{
+    border-radius: 50%;
     border: transparent;
     background-color: transparent;
-}
-
-.unclicked{
-    background-color: rgb(218, 223, 228);
+    box-shadow: none;
 }
 
 .liked{
@@ -28,3 +190,4 @@ button:hover {
     border: transparent;
     background-color: transparent;
 }
+/*End like/dislike button styles*/

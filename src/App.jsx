@@ -15,10 +15,12 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App flatten">
       <NavBar/>
       <CreatePost addNewPostProperty = {addNewPost}/>
-      <DisplayPosts actualPosts = {posts}/>
+      <div className='feed no-padding-w-adjusted-width'>
+        <DisplayPosts actualPosts = {posts}/>
+      </div>
     </div>
   );
 }

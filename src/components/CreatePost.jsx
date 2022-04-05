@@ -16,15 +16,23 @@ const CreatePost = (props) => {
         props.addNewPostProperty(newEntry)
     }
 
-    return (
-        <form onSubmit={handleSubmit} className='defaultStyle'>
-            <label>Name</label>
-            <input type='text' value={name} onChange={(event)=>setName(event.target.value)}/>
-            <label>Post</label>
-            <input type='text' value={post} onChange={(event)=>setPost(event.target.value)}/>
-            <label>Date</label>
-            <input type='date' value={date} onChange={(event)=>setDate(event.target.value)}/>
-            <button type='submit'>Create</button>
+    return (                                                // V un-used currently
+        <form onSubmit={handleSubmit} className='feed-box create-post'>
+            <div className="create-post-row">
+                <label className="create-post-row-item">Name</label>
+                <input className="post-input" type='text' value={name} onChange={(event)=>setName(event.target.value)}/>
+            </div>
+            <div className="create-post-row">
+                <label className="create-post-row-item">Post</label>
+                <textarea className="post-input  big-input" type='text' value={post} onChange={(event)=>setPost(event.target.value)}/>
+            </div>
+            <div className="create-post-date-create">
+                <div className="close-together">
+                    <label className="create-post-row-item">Date</label>
+                    <input className="post-input-date" type='date' value={date} onChange={(event)=>setDate(event.target.value)}/>
+                </div>
+                <button type='submit' className="create-button">Create</button>
+            </div>
         </form>
     );
 }

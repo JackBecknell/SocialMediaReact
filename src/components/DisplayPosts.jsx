@@ -9,14 +9,18 @@ const DisplayPosts = (props) => {
     <div>
         {props.actualPosts.map((post) => {
             return (
-            <div className='defaultStyle'>
-                <h2><b>{post.name}</b></h2>
-                <p>{post.post}</p>
-                <p>{post.date}</p>
-                <div>
-                    <LikeDislikeButton type="toggle"/>
+            <div >
+                <div className='displayed-post'>
+                    <h2><b>{post.name}</b></h2>
+                    <p className="post-text">{post.post}</p>
+                    <div className="date-and-button">
+                        <p className="grey-text">{post.date}</p>
+                        <LikeDislikeButton type="toggle"/>
+                    </div>
                 </div>
+                <div className="post-divider"></div>
             </div>
+            
             );
         })}
     </div>

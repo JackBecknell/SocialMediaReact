@@ -3,8 +3,8 @@ import './styles/styles.css'
 
 const NavBar = () => {
     return (
-        <nav className='defaultStyle'>
-            <a href="#"><b>Social</b>Feed</a>
+        <nav className='nav-bar'>
+            <a href="#" className="company-name"><b>Social</b>Feed</a>
         </nav>
     )
 }
