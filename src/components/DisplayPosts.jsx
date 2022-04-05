@@ -12,6 +12,7 @@ const DisplayPosts = (props) => {
             <div className='defaultStyle'>
                 <h2><b>{post.name}</b></h2>
                 <p>{post.post}</p>
+                <p>{post.date}</p>
                 <div>
                     <LikeDislikeButton type="toggle"/>
                 </div>
