@@ -216,5 +216,66 @@ button:hover {
     
 }
 
+/*Sidebar Styles start#6f16ff*/
+.side-head{
+    display: flex;
+    font-weight:lighter ;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-style: solid;
+    border-color: #c5c5c5;
+    background:  linear-gradient(to bottom, #5a36f8,#6f16ff, #6f16ff, rgb(47, 0, 56) );
+    color: white;
+    width: 10rem;
+    height: 35px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: transparent;
+    border-left: transparent;
+    border-bottom-right-radius: 8px;
+}
 
+.all-side-names{
+    margin-top: auto;
+    max-width: 50px;
+}
+/*#c5c5c5*/
+
+.side-box{
+    display: flex;
+    flex-wrap: wrap;
+    background:  linear-gradient(to left , #d3ebfd, #a6d8ff, #55b4fd,#55b4fd, #55b4fd, #53acff, #9380fd);
+    width: 9rem;
+    height: fit-content;
+    margin-top: 0;
+    justify-content: left;
+    align-content: center;
+    border-style: solid;
+    border-image: linear-gradient(45deg, rgb(97, 0, 161), rgb(44, 139, 211), rgb(211, 235, 253), rgb(211, 235, 253)) 1;
+    border-top: transparent;
+    border-right: transparent;
+}
+
+.side-bar{
+    margin-top: 0%;
+}
+
+.white-text{
+    font-weight: lighter;
+    color: rgb(0, 0, 0);
+    margin: 0;
+
+}
+
+.sidebar-and-feed{
+    display: flex;
+}
+
+
+.main-feed{
+    align-self: center;
+    justify-content: center;
+    margin-left: -11.2%;
+}
 
