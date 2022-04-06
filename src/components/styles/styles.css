@@ -4,10 +4,6 @@
     border-width: 2px;
     border-color: rgb(0, 0, 0);
 }
-/*V this doesnt work...*/
-.page-background{
-    /*background-color: #000000;*/
-}
 
 /*Used to remove the invisible space created from root*/
 .flatten{
@@ -19,7 +15,7 @@
 /*Start navbar*/
 .nav-bar{
     background-color: #00d9ff;
-    background: linear-gradient(to right bottom,#92c8f5, #013c69);
+    background: linear-gradient(to right bottom,#92c8f5, #38a5ff, #013c69);
     padding: 1%;
     max-width: 100%;
 }
@@ -111,12 +107,13 @@ label {
 .feed{
     width: 50%;
     margin: 1.5rem auto;
-    padding: 10px;
+    margin-bottom: 5rem;
     border-style: solid;
     border-color:#c5c5c5;
     border-width: 2px;
     border-radius: .75rem;
-    box-shadow: .5rem .5rem 1rem .1rem rgba(0, 0, 0, 0.086)
+    box-shadow: .5rem .5rem 1rem .1rem rgba(0, 0, 0, 0.086);
+    background-color: #ffffff;
 }
 
 .displayed-post{
@@ -163,7 +160,6 @@ label {
     justify-content: space-between;
 }
 
-
 /*End Display Posts*/
 
 
@@ -191,3 +187,34 @@ button:hover {
     background-color: transparent;
 }
 /*End like/dislike button styles*/
+
+/*footer styles Start*/
+.footer{
+    width: 100%;
+    height: 5rem;
+    background: linear-gradient(to left bottom, #013c69 , #0165b1,#92c8f5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-button{
+    color: aliceblue;
+    letter-spacing: 1.75px;
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91C9FF;
+    outline: white;
+}
+
+.footer-button:hover{
+    border: 2px solid #bddefc;
+    border-style:double;
+    background:  linear-gradient(to left bottom,#92c8f5 , #38a5ff, #013c69 );
+    
+}
+
+
+

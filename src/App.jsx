@@ -2,6 +2,7 @@ import { useState } from "react";
 import NavBar from "./components/NavBar";
 import CreatePost from "./components/CreatePost";
 import DisplayPosts from "./components/DisplayPosts";
+import Post from "./components/Post"
 import './components/styles/styles.css'
 
 
@@ -21,6 +22,7 @@ function App() {
       <div className='feed no-padding-w-adjusted-width'>
         <DisplayPosts actualPosts = {posts}/>
       </div>
+      <Post/>
     </div>
   );
 }
